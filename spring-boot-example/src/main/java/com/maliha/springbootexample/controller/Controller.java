@@ -13,4 +13,10 @@ public class Controller {
     public String greet(){
         return "Hello";
     }
+    @GetMapping("/greet/record")
+    public GreetResponse greetResponse(){
+        return new GreetResponse("Hello");
+    }
+
+    record GreetResponse(String greet){}
 }
