@@ -20,11 +20,11 @@ public class Controller {
         return new GreetResponse("Hello");
     }
 
-    //record GreetResponse(String greet){}
+    record GreetResponse(String greet){}
 
 
 
-    //equivalent of record:
+/*     equivalent of record:
     public class GreetResponse{
         public final String greet;
 
@@ -56,4 +56,5 @@ public class Controller {
                     '}';
         }
     }
+*/
 }
