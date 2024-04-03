@@ -3,6 +3,7 @@ package com.maliha.springbootexample.controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
 import java.util.Objects;
 
 @RestController
@@ -17,10 +18,10 @@ public class Controller {
     }
     @GetMapping("/greet/record")
     public GreetResponse greetResponse(){
-        return new GreetResponse("Hello");
+        return new GreetResponse("Hello",List.of("Java","Python","C++"),new Person("Person1"));
     }
-
-    record GreetResponse(String greet){}
+    record Person(String name){}
+    record GreetResponse(String greet, List<String> favProgrammingLanguage,Person person){}
 
 
 
