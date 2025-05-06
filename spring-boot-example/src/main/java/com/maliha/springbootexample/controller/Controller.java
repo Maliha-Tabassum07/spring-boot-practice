@@ -11,7 +11,7 @@ import java.util.List;
 public class Controller {
     @GetMapping("/")
     public String home(){
-        return "Welcome";
+        return "<h1>Welcome</h1>";
     }
     @GetMapping("/greet")
     public String greet(){
