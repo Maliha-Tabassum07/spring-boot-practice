@@ -1,0 +1,7 @@
+mvn validate
+mvn compile
+mvn test
+mvn package -> Creates the Jar file
+java -jar target/projectName.jar -> To run the jar file
+mvn install -> Installs the jar file in the local repository
+mvn clean
