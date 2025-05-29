@@ -1,0 +1,15 @@
+***collections, fields and documents***
+
+-> mongosh
+-> show dbs
+-> use dbName [Even if the database does not exist, it will be created when you insert data]
+-> show collections
+->db.collectionName.insertOne({"name":"name","age":"12"}) [Even if the collection does not exist, it will be created when you insert data]
+->db.collectionName.find() [find all documents in the collection]
+->db.collectionName.find({name:"name"}) [find documents with name "name"]
+->db.collectionName.deleteOne({name:"name"}) [delete documents with name "name"]
+
+
+
+
+
