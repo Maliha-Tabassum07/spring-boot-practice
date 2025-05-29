@@ -7,8 +7,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/_journal")
-public class JournalController {
+@RequestMapping("/journal")
+public class JournalControllerV2 {
     private Map<Long, JournalEntity> journalEntity= new HashMap<>();
     @GetMapping
     public Map<Long, JournalEntity> getAllJournalEntity() {
@@ -39,5 +39,4 @@ public class JournalController {
         }
         return false;
     }
-
 }
